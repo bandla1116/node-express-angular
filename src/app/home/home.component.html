@@ -1,0 +1,7 @@
+<my-table [config]="config$ | async" [data]="data$ | async" (newPage)="updateTable($event)"
+  (selection)="goDetails($event)"></my-table>
+
+<div class="inventory-app">
+  <app-item-list [productList]="products" (onProductSelected)="productWasSelected($event)">
+  </app-item-list>
+</div>

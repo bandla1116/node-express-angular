@@ -1,0 +1,4 @@
+<div class="ui items">
+  <app-item-rack *ngFor="let p of productList" [product]="p" (click)='clicked(p)' [class.selected]="isSelected(p)">
+  </app-item-rack>
+</div>
